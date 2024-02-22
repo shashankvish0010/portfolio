@@ -1,0 +1,78 @@
+[
+    {
+        "icon": "devicon:cplusplus",
+        "name": "C++"
+    },
+    {
+        "icon": "logos:javascript",
+        "name": "Javascript"
+    },
+    {
+        "icon": "devicon:typescript",
+        "name": "Typescript"
+    },
+    {
+        "icon": "devicon:postgresql-wordmark",
+        "name": "PostgreSQL"
+    },
+    {
+        "icon": "devicon:mongodb-wordmark",
+        "name": "MongoDB"
+    },
+    {
+        "icon": "skill-icons:react-dark",
+        "name": "React JS"
+    },
+    {
+        "icon": "logos:nodejs",
+        "name": "Node JS"
+    },
+    {
+        "icon": "skill-icons:expressjs-dark",
+        "name": "Express JS"
+    },
+    {
+        "icon": "devicon:tailwindcss",
+        "name": "Tailwind CSS"
+    },
+    {
+        "icon": "logos:webrtc",
+        "name": "WebRTC"
+    },
+    {
+        "icon": "devicon:socketio",
+        "name": "Socket.io"
+    },
+    {
+        "icon": "logos:redis",
+        "name": "Redis"
+    },
+    {
+        "icon": "logos:html-5",
+        "name": "HTML"
+    },
+    {
+        "icon": "devicon:css3-wordmark",
+        "name": "CSS"
+    },
+    {
+        "icon": "vscode-icons:file-type-scss",
+        "name": "SCSS"
+    },
+    {
+        "icon": "logos:figma",
+        "name": "Figma"
+    },
+    {
+        "icon": "devicon:git",
+        "name": "Git"
+    },
+    {
+        "icon": "devicon:github",
+        "name": "GitHub"
+    },
+    {
+        "icon": "logos:docker-icon",
+        "name": "Docker"
+    }
+]
