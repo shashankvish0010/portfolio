@@ -4,8 +4,20 @@
 @tailwind utilities;
 
 
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .heading {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+
+.meta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
