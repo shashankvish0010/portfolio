@@ -23,7 +23,7 @@ const Home: React.FC = () => {
                     <img className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
                 </div>
             </div>
-            <div className='bg-slate-100 h-max w-screen flex flex-col items-center gap-3 p-3'>
+            <div className='h-max w-screen flex flex-col items-center gap-3 p-3'>
                 <div className='h-max w-[85vw] p-3 flex flex-col items-center gap-2'>
                 <p className='header_list text-xl'>About Me</p>
                 <p className='heading_other md:text-3xl text-2xl'>Shashank <span className='text-indigo-600'>Vishwakarma</span></p>
