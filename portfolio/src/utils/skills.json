@@ -1,78 +1,97 @@
 [
     {
         "icon": "devicon:cplusplus",
-        "name": "C++"
+        "name": "C++",
+        "type": "Other"
     },
     {
         "icon": "logos:javascript",
-        "name": "Javascript"
+        "name": "Javascript",
+        "type": "Front-end"
     },
     {
         "icon": "devicon:typescript",
-        "name": "Typescript"
+        "name": "Typescript",
+        "type": "Front-end"
     },
     {
         "icon": "devicon:postgresql-wordmark",
-        "name": "PostgreSQL"
+        "name": "PostgreSQL",
+        "type": "Back-end"
     },
     {
         "icon": "devicon:mongodb-wordmark",
-        "name": "MongoDB"
+        "name": "MongoDB",
+        "type": "Back-end"
     },
     {
         "icon": "skill-icons:react-dark",
-        "name": "React JS"
+        "name": "React JS",
+        "type": "Front-end"
     },
     {
-        "icon": "logos:nodejs",
-        "name": "Node JS"
+        "icon": "skill-icons:nodejs-light",
+        "name": "Node JS",
+        "type": "Back-end"
     },
     {
         "icon": "skill-icons:expressjs-dark",
-        "name": "Express JS"
+        "name": "Express JS",
+        "type": "Back-end"
     },
     {
         "icon": "devicon:tailwindcss",
-        "name": "Tailwind CSS"
+        "name": "Tailwind CSS",
+        "type": "Other"
     },
     {
         "icon": "logos:webrtc",
-        "name": "WebRTC"
+        "name": "WebRTC",
+        "type": "Other"
     },
     {
         "icon": "devicon:socketio",
-        "name": "Socket.io"
+        "name": "Socket.io",
+        "type": "Other"
     },
     {
         "icon": "logos:redis",
-        "name": "Redis"
+        "name": "Redis",
+        "type": "Back-end"
     },
     {
         "icon": "logos:html-5",
-        "name": "HTML"
+        "name": "HTML",
+        "type": "Front-end"
     },
     {
         "icon": "devicon:css3-wordmark",
-        "name": "CSS"
+        "name": "CSS",
+        "type": "Front-end"
     },
     {
         "icon": "vscode-icons:file-type-scss",
-        "name": "SCSS"
+        "name": "SCSS",
+        "type": "Front-end"
     },
     {
         "icon": "logos:figma",
-        "name": "Figma"
+        "name": "Figma",
+        "type": "Front-end"
     },
     {
         "icon": "devicon:git",
-        "name": "Git"
+        "name": "Git",
+        "type": "Other"
     },
     {
         "icon": "devicon:github",
-        "name": "GitHub"
+        "name": "GitHub",
+        "type": "Other"
     },
     {
         "icon": "logos:docker-icon",
-        "name": "Docker"
+        "name": "Docker",
+        "type": "Other"
     }
 ]
