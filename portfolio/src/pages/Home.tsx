@@ -7,8 +7,8 @@ import skills from '../utils/skills.json'
 // import Projects from '../components/Projects'
 
 const Home: React.FC = () => {
-    let [index, setIndex] = useState<number>(0)
     const skillsCategories: string[] = ["Front-end", "Back-end", "Other"]
+    let [index, setIndex] = useState(0);
     return (
         <div className='h-max w-screen flex flex-col items-center gap-3'>
             <div className='md:h-[80vh] h-max w-screen flex md:flex-row flex-col-reverse md:justify-evenly items-center justify-center'>
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
             <div className='bg-indigo-600 text-white rounded-[50px] h-max w-[90vw] flex flex-col items-center gap-3 p-3 shadow-xl mt-5 md:mt-0'>
                 <div className='rounded-b-full h-max w-[85vw] p-3 flex flex-col items-center text-center gap-2'>
                     <p className='header_list text-xl'>Who's this guy?</p>
-                    <p className='heading_other md:text-3xl text-xl'>Shashank <span className='text-yellow-300'>Vishwakarma</span></p>
+                    <p className='heading_other md:text-3xl text-xl'>Shashank <span className='text-yellow-200'>Vishwakarma</span></p>
                     <span className='flex flex-row items-center gap-1'>
                         <Icon className='md:block hidden' icon="meteocons:star-fill" width="3rem" height="3rem" />
                         <p className='w-[100%] text-slate-100 text-start para_list text-sm md:text-base leading-6 mt-5'>
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='heading_other text-3xl'>My <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Skills</span></p>
                 </div>
-                <div className='h-max md:w-[85vw] w-[100vw] flex md:justify-between justify-evenly items-center'>
+                <div className='h-max md:w-[85vw] w-[100vw] flex md:justify-between justify-evenly md:items-start items-center'>
                     <div className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Front End</p>
                         {
@@ -94,11 +94,10 @@ const Home: React.FC = () => {
                             )
                         }
                     </div>
-
-                    <div onClick={()=> {index > 0 ? setIndex(--index) : setIndex(2)}}>
-                    <Icon className='bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{color: "white"}}/>
+                    <div className='md:hidden' onClick={()=> {index > 0 ? setIndex(--index) : setIndex(2)}}>
+                    <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{color: "white"}}/>
                     </div>
-                    <div className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl'>
+                    <div className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
                         <p className='header_list text-xl text-center p-2'>{skillsCategories[index]}</p>
                         {
                             
@@ -113,12 +112,12 @@ const Home: React.FC = () => {
                             
                         }
                     </div>
-                    <div onClick={()=> {index < 2 ? setIndex(++index) : setIndex(0)}}>
-                    <Icon className='bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-right-2-bold" color='white' width="1.5rem" style={{color: "white"}} />
-                    </div>
+                    <div className='md:hidden' onClick={()=> {index < 2 ? setIndex(++index) : setIndex(0)}}>
+                    <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-right-2-bold" color='white' width="1.5rem" style={{color: "white"}} />
+                    </div> 
                 </div>
             </div>
-            {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
+             {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
