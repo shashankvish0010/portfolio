@@ -1,29 +1,59 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify-icon/react'
 import profile from '../assets/Profile_Picture.jpeg'
 import Skills from '../components/Skills'
 import skills from '../utils/skills.json'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 // import project1 from '../assets/laptop_portfolio.avif'
 // import Projects from '../components/Projects'
 
 const Home: React.FC = () => {
     const skillsCategories: string[] = ["Front-end", "Back-end", "Other"]
     let [index, setIndex] = useState(0);
+    const controls1 = useAnimation();
+    const controls2 = useAnimation();
+    const controls3 = useAnimation();
+    const controls_mob = useAnimation();
+
+    const {ref: ref1, inView: inView1} = useInView()
+    const {ref: ref2, inView: inView2} = useInView()
+    const {ref: ref3, inView: inView3} = useInView()
+    const {ref: ref_mob, inView: inView_mob} = useInView()
+
+    useEffect(()=> {
+        if(inView1) {
+            controls1.start({ y: 0, opacity:1 })
+        }
+        if (inView2) {
+            controls2.start({ y: 0, opacity: 1 });
+        }
+        if (inView3) {
+            controls3.start({ y: 0, opacity: 1 });
+        }
+        if (inView_mob) {
+            controls_mob.start({ opacity: 1 })
+        }
+    }, [controls1,controls2, controls3, inView1, inView2, inView3])
     return (
         <div className='h-max w-screen flex flex-col items-center gap-3'>
             <div className='md:h-[80vh] h-max w-screen flex md:flex-row flex-col-reverse md:justify-evenly items-center justify-center'>
-                <div className='flex flex-col gap-5 p-3 md:w-[45%] w-[85%]'>
+                <motion.div initial={{x: -100, opacity: 0}} animate={{x: 0, opacity:1}} transition={{duration: 0.7}}
+                className='flex flex-col gap-5 p-3 md:w-[45%] w-[85%]'>
                     <p className='header_list text-gray-600'>Hi, I'm Shashank Vishwakarma</p>
-                    <p className='heading md:text-6xl text-3xl'>I'm a <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Full-Stack</span> Web Developer.</p>
+                    <p className='heading md:text-6xl text-3xl'>I'm a <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Full-Stack</span> <p className='animate-typing overflow-hidden whitespace-nowrap'>Web Developer.</p></p>
                     <p className='para_list text-sm text-gray-600'>I'm a full-stack web developer, I can provide clean code & pixel perfect design.</p>
                     <span className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded'>
                         <p>My Projects</p>
                         <Icon icon="uil:arrow" color='white' height={'4vh'} />
                     </span>
-                </div>
+                </motion.div>
                 <div className='md:flex hidden justify-center items-center h-max w-max'>
-                    <img className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
-                </div>
+                    <motion.img initial={{y: -100, opacity: 0}}
+                        animate={{y:0, opacity: 1}}
+                        transition={{type: "spring", stiffness: 100}}
+                        className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
+                </div>        
                 <div className='md:hidden flex justify-center items-center h-max w-max'>
                     <img className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='250px' />
                 </div>
@@ -52,7 +82,8 @@ const Home: React.FC = () => {
                     <p className='heading_other text-3xl'>My <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Skills</span></p>
                 </div>
                 <div className='h-max md:w-[85vw] w-[100vw] flex md:justify-between justify-evenly md:items-start items-center'>
-                    <div className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                <motion.div ref={ref1} initial={{y: -100,opacity:0}} animate={controls1} transition={{type: "spring", stiffness: 100, delay: 0.4}}
+                className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Front End</p>
                         {
                             skills?.map((data) =>
@@ -62,11 +93,13 @@ const Home: React.FC = () => {
                                         icon={data.icon}
                                         name={data.name}
                                         percent={data.percent}
+                                        delay={0.6}
                                     /> : null
                             )
                         }
-                    </div>
-                    <div className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                    </motion.div>
+                    <motion.div ref={ref2} initial={{y: -100,opacity:0}} animate={controls2} transition={{type: "spring", stiffness: 100, delay: 0.6}}
+                    className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Back End</p>
                         {
                             skills?.map((data) =>
@@ -76,11 +109,13 @@ const Home: React.FC = () => {
                                         icon={data.icon}
                                         name={data.name}
                                         percent={data.percent}
+                                        delay={0.7}
                                     /> : null
                             )
                         }
-                    </div>
-                    <div className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                    </motion.div>
+                    <motion.div ref={ref3} initial={{y: -100,opacity:0}} animate={controls3} transition={{type: "spring", stiffness: 100, delay: 0.8}}
+                    className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Other</p>
                         {
                             skills?.map((data) =>
@@ -90,34 +125,38 @@ const Home: React.FC = () => {
                                         icon={data.icon}
                                         name={data.name}
                                         percent={data.percent}
+                                        delay={0.9}
                                     /> : null
                             )
                         }
+                    </motion.div>
+                    <div 
+                    className='md:hidden' onClick={() => { index > 0 ? setIndex(--index) : setIndex(2) }}>
+                        <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{ color: "white" }} />
                     </div>
-                    <div className='md:hidden' onClick={()=> {index > 0 ? setIndex(--index) : setIndex(2)}}>
-                    <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{color: "white"}}/>
-                    </div>
-                    <div className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
+                    <motion.div ref={ref_mob} initial={{opacity:0}} animate={controls_mob} transition={{ease: "linear", duration: 1}}
+                    className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
                         <p className='header_list text-xl text-center p-2'>{skillsCategories[index]}</p>
                         {
-                            
-                                skills?.map((data) =>
-                                   data.type == skillsCategories[index] ?
-                                        <Skills
-                                            icon={data.icon}
-                                            name={data.name}
-                                            percent={data.percent}
-                                        /> : null
-                                )
-                            
+
+                            skills?.map((data) =>
+                                data.type == skillsCategories[index] ?
+                                    <Skills
+                                        icon={data.icon}
+                                        name={data.name}
+                                        percent={data.percent}
+                                        delay={0.1}
+                                    /> : null
+                            )
+
                         }
+                    </motion.div>
+                    <div className='md:hidden' onClick={() => { index < 2 ? setIndex(++index) : setIndex(0) }}>
+                        <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-right-2-bold" color='white' width="1.5rem" style={{ color: "white" }} />
                     </div>
-                    <div className='md:hidden' onClick={()=> {index < 2 ? setIndex(++index) : setIndex(0)}}>
-                    <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-right-2-bold" color='white' width="1.5rem" style={{color: "white"}} />
-                    </div> 
                 </div>
             </div>
-             {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
+            {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
