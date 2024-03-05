@@ -4,8 +4,7 @@ const Header: React.FC = () => {
   return (
     <div className='h-[15vh] w-screen p-3 flex flex-row justify-evenly items-center'>
       <div className='text-2xl logo h-max w-[25vw]'>
-        <h1>Shashank</h1>
-        <span className='text-indigo-600 text-xl ml-10'>Vishwakarma</span>
+        <h1>Shashank <span className='text-indigo-600'>Vishwakarma</span></h1>
       </div>
       <ul className='h-max uppercase w-[30vw] header_list hidden md:flex flex-row justify-around items-center text-sm'>
         <li className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>Home</li>
