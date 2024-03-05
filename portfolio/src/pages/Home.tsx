@@ -37,7 +37,7 @@ const Home: React.FC = () => {
         }
     }, [controls1,controls2, controls3, inView1, inView2, inView3])
     return (
-        <div className='h-max w-screen flex flex-col items-center gap-3'>
+        <div className='h-max w-screen flex flex-col items-center gap-5'>
             <div className='md:h-[80vh] h-max w-screen flex md:flex-row flex-col-reverse md:justify-evenly items-center justify-center'>
                 <motion.div initial={{x: -100, opacity: 0}} animate={{x: 0, opacity:1}} transition={{duration: 0.7}}
                 className='flex flex-col gap-5 p-3 md:w-[45%] w-[85%]'>
