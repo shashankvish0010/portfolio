@@ -5,6 +5,7 @@ import Skills from '../components/Skills'
 import skills from '../utils/skills.json'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import Calendly from '../components/Calendly'
 // import project1 from '../assets/laptop_portfolio.avif'
 // import Projects from '../components/Projects'
 
@@ -58,7 +59,7 @@ const Home: React.FC = () => {
                     <img className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='250px' />
                 </div>
             </div>
-            <div className='bg-indigo-600 text-white rounded-[50px] h-max w-[90vw] flex flex-col items-center gap-3 p-3 shadow-xl mt-5 md:mt-0'>
+            <div id="about" className='bg-indigo-600 text-white rounded-[50px] h-max w-[90vw] flex flex-col items-center gap-3 p-3 shadow-xl mt-5 md:mt-0'>
                 <div className='rounded-b-full h-max w-[85vw] p-3 flex flex-col items-center text-center gap-2'>
                     <p className='header_list text-xl'>Who's this guy?</p>
                     <p className='heading_other md:text-3xl text-xl'>Shashank <span className='text-yellow-200'>Vishwakarma</span></p>
@@ -77,7 +78,7 @@ const Home: React.FC = () => {
                     <p className='header_list text-sm md:text-base mt-5'>Trust me I'm Resourceful, Reliable and Results Oriented.</p>
                 </div>
             </div>
-            <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
+            <div id="skills" className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='heading_other text-3xl'>My <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Skills</span></p>
                 </div>
@@ -156,6 +157,7 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </div>
+
             {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
@@ -168,6 +170,10 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
             </div> */}
+
+            <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
+                <Calendly/>
+            </div>
         </div>
     )
 }
