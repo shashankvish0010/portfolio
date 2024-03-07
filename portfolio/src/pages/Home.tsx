@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                 <div className='md:flex hidden justify-center items-center h-max w-max'>
                     <motion.img initial={{ y: -100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 100 }}
+                        transition={{ type: "spring", stiffness: 100, behaviour: "smooth"}}
                         className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
                 </div>
                 <div className='md:hidden flex justify-center items-center h-max w-max'>
