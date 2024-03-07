@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <li onClick={()=>scrollToSection('home')} className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>Home</li>
         <li onClick={()=>scrollToSection('about')} className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>About Me</li>
         <li onClick={()=>scrollToSection('skills')} className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>Skills</li>
-        <li  className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>Projects</li>
+        <li onClick={()=>scrollToSection('projects')}  className='hover:text-indigo-600 hover:-translate-y-1 transition cursor-pointer'>Projects</li>
       </ul>
       <div className='h-max w-max'>
         <button onClick={()=>scrollToSection('connect')} className='header_list bg-indigo-600 text-white p-2 rounded-full'>Let's Connect</button>
