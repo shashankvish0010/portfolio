@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                     <p className='header_list text-gray-600'>Hi, I'm Shashank Vishwakarma</p>
                     <p className='heading md:text-6xl text-3xl'>I'm a <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Full-Stack</span> <p className='animate-typing overflow-hidden whitespace-nowrap'>Web Developer.</p></p>
                     <p className='para_list text-sm text-gray-600'>I'm a full-stack web developer, I can provide clean code & pixel perfect design.</p>
-                    <span onClick={()=>document.getElementById('projects')?.scrollIntoView({behavior:'smooth'})} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded'>
+                    <span onClick={()=>document.getElementById('projects')?.scrollIntoView({behavior:'smooth'})} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded cursor-pointer'>
                         <p>My Projects</p>
                         <Icon icon="uil:arrow" color='white' height={'4vh'} />
                     </span>
