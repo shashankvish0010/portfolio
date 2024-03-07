@@ -17,14 +17,14 @@ const Home: React.FC = () => {
     const controls3 = useAnimation();
     const controls_mob = useAnimation();
 
-    const {ref: ref1, inView: inView1} = useInView()
-    const {ref: ref2, inView: inView2} = useInView()
-    const {ref: ref3, inView: inView3} = useInView()
-    const {ref: ref_mob, inView: inView_mob} = useInView()
+    const { ref: ref1, inView: inView1 } = useInView()
+    const { ref: ref2, inView: inView2 } = useInView()
+    const { ref: ref3, inView: inView3 } = useInView()
+    const { ref: ref_mob, inView: inView_mob } = useInView()
 
-    useEffect(()=> {
-        if(inView1) {
-            controls1.start({ y: 0, opacity:1 })
+    useEffect(() => {
+        if (inView1) {
+            controls1.start({ y: 0, opacity: 1 })
         }
         if (inView2) {
             controls2.start({ y: 0, opacity: 1 });
@@ -35,26 +35,26 @@ const Home: React.FC = () => {
         if (inView_mob) {
             controls_mob.start({ opacity: 1 })
         }
-    }, [controls1,controls2, controls3, inView1, inView2, inView3])
+    }, [controls1, controls2, controls3, inView1, inView2, inView3])
     return (
         <div id="home" className='h-max w-screen flex flex-col items-center gap-5'>
             <div className='md:h-[80vh] h-max w-screen flex md:flex-row flex-col-reverse md:justify-evenly items-center justify-center'>
-                <motion.div initial={{x: -100, opacity: 0}} animate={{x: 0, opacity:1}} transition={{duration: 0.7}}
-                className='flex flex-col gap-5 p-3 md:w-[45%] w-[85%]'>
+                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7 }}
+                    className='flex flex-col gap-5 p-3 md:w-[45%] w-[85%]'>
                     <p className='header_list text-gray-600'>Hi, I'm Shashank Vishwakarma</p>
                     <p className='heading md:text-6xl text-3xl'>I'm a <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Full-Stack</span> <p className='animate-typing overflow-hidden whitespace-nowrap'>Web Developer.</p></p>
                     <p className='para_list text-sm text-gray-600'>I'm a full-stack web developer, I can provide clean code & pixel perfect design.</p>
-                    <span onClick={()=>document.getElementById('projects')?.scrollIntoView({behavior:'smooth'})} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded cursor-pointer'>
+                    <span onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded cursor-pointer'>
                         <p>My Projects</p>
                         <Icon icon="uil:arrow" color='white' height={'4vh'} />
                     </span>
                 </motion.div>
                 <div className='md:flex hidden justify-center items-center h-max w-max'>
-                    <motion.img initial={{y: -100, opacity: 0}}
-                        animate={{y:0, opacity: 1}}
-                        transition={{type: "spring", stiffness: 100}}
+                    <motion.img initial={{ y: -100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", stiffness: 100 }}
                         className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
-                </div>        
+                </div>
                 <div className='md:hidden flex justify-center items-center h-max w-max'>
                     <img className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='250px' />
                 </div>
@@ -83,8 +83,8 @@ const Home: React.FC = () => {
                     <p className='heading_other text-3xl'>My <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Skills</span></p>
                 </div>
                 <div className='h-max md:w-[85vw] w-[100vw] flex md:justify-between justify-evenly md:items-start items-center'>
-                <motion.div ref={ref1} initial={{y: -100,opacity:0}} animate={controls1} transition={{type: "spring", stiffness: 100, delay: 0.4}}
-                className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                    <motion.div ref={ref1} initial={{ y: -100, opacity: 0 }} animate={controls1} transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
+                        className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Front End</p>
                         {
                             skills?.map((data) =>
@@ -99,8 +99,8 @@ const Home: React.FC = () => {
                             )
                         }
                     </motion.div>
-                    <motion.div ref={ref2} initial={{y: -100,opacity:0}} animate={controls2} transition={{type: "spring", stiffness: 100, delay: 0.6}}
-                    className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                    <motion.div ref={ref2} initial={{ y: -100, opacity: 0 }} animate={controls2} transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+                        className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Back End</p>
                         {
                             skills?.map((data) =>
@@ -115,8 +115,8 @@ const Home: React.FC = () => {
                             )
                         }
                     </motion.div>
-                    <motion.div ref={ref3} initial={{y: -100,opacity:0}} animate={controls3} transition={{type: "spring", stiffness: 100, delay: 0.8}}
-                    className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
+                    <motion.div ref={ref3} initial={{ y: -100, opacity: 0 }} animate={controls3} transition={{ type: "spring", stiffness: 100, delay: 0.8 }}
+                        className='hidden h-max md:w-[30%] w-[100%] md:flex flex-col gap-2 rounded-3xl border-2 shadow-xl'>
                         <p className='header_list text-xl text-center p-2'>Other</p>
                         {
                             skills?.map((data) =>
@@ -131,12 +131,12 @@ const Home: React.FC = () => {
                             )
                         }
                     </motion.div>
-                    <div 
-                    className='md:hidden' onClick={() => { index > 0 ? setIndex(--index) : setIndex(2) }}>
+                    <div
+                        className='md:hidden' onClick={() => { index > 0 ? setIndex(--index) : setIndex(2) }}>
                         <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{ color: "white" }} />
                     </div>
-                    <motion.div ref={ref_mob} initial={{opacity:0}} animate={controls_mob} transition={{ease: "linear", duration: 1}}
-                    className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
+                    <motion.div ref={ref_mob} initial={{ opacity: 0 }} animate={controls_mob} transition={{ behaviour: "smooth" }}
+                        className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
                         <p className='header_list text-xl text-center p-2'>{skillsCategories[index]}</p>
                         {
 
@@ -172,7 +172,7 @@ const Home: React.FC = () => {
             </div> */}
 
             <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
-                <Calendly/>
+                <Calendly />
             </div>
         </div>
     )
