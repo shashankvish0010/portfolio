@@ -15,12 +15,10 @@ const Home: React.FC = () => {
     const controls1 = useAnimation();
     const controls2 = useAnimation();
     const controls3 = useAnimation();
-    const controls4 = useAnimation();
 
     const { ref: ref1, inView: inView1 } = useInView()
     const { ref: ref2, inView: inView2 } = useInView()
     const { ref: ref3, inView: inView3 } = useInView()
-    const { ref: ref4, inView: inView4 } = useInView()
 
     useEffect(() => {
         if (inView1) {
@@ -31,9 +29,6 @@ const Home: React.FC = () => {
         }
         if (inView3) {
             controls3.start({ y: 0, opacity: 1 });
-        }
-        if (inView4) {
-            controls4.start({ opacity: 1 })
         }
     }, [controls1, controls2, controls3, inView1, inView2, inView3])
     return (
@@ -135,7 +130,7 @@ const Home: React.FC = () => {
                         className='md:hidden' onClick={() => { index > 0 ? setIndex(--index) : setIndex(2) }}>
                         <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{ color: "white" }} />
                     </div>
-                    <motion.div ref={ref4} initial={{ opacity: 0 }} animate={controls4} transition={{ behaviour: "smooth" }}
+                    <motion.div initial={{ opacity:0 }} animate={{opacity: 1}} transition={{ behaviour: "smooth", delay: 0.4}}
                         className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
                         <p className='header_list text-xl text-center p-2'>{skillsCategories[index]}</p>
                         {
