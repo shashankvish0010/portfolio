@@ -164,6 +164,7 @@ const Home: React.FC = () => {
                     loomVideo={"https://www.loom.com/embed/12a6e38b27e24ce081d05d11d9a93774?sid=d1f1f35a-b771-4b43-ae35-acb878e19b6d"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
                     projectUrl={'https://wemeet-psi.vercel.app/'}
+                    github={'https://github.com/shashankvish0010/wemeet'}
                     project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript", "WebRTC", "Socket.io", "Redis"]}
@@ -175,6 +176,7 @@ const Home: React.FC = () => {
                     loomVideo={"https://www.loom.com/embed/0319f4bd190b469ab0eccdfa71584b04?sid=833c10bd-9ba5-4279-9da1-6b9c3a7089e6"}
                     project_name={"ZEN - Video Calling & Upcoming Livestream."}
                     projectUrl={'https://zen-gamma.vercel.app/'}
+                    github={'https://github.com/shashankvish0010/zen'}
                     project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned WebRTC architecture and WebSocket.', 'Implemented the Web-RTC with Socket.io for realtime video calling', 'Building a real-time user login monitoring to detect active users on platform.', 'Learned Redis to lower threshold of Database.']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript", "WebRTC", "Socket.io", "Redis"]}
@@ -186,6 +188,7 @@ const Home: React.FC = () => {
                     loomVideo={"https://www.loom.com/embed/49fb57cd210d4c28a9a3dba7a0e51e6b?sid=37036a6f-6353-43aa-be3f-20684de69742"}
                     project_name={"WeBlog - Blogging platform for developers."}
                     projectUrl={'https://weblog-lake.vercel.app/'}
+                    github={'https://github.com/shashankvish0010/weblog'}
                     project_description={"WeBlog is a full-stack web platform crafted with the powerful PERN stack (PostgreSQL, Express.js, React.js, Node.js). Complemented by a sleek React.js frontend, styled with Tailwind CSS, WeBlog offers developers a seamless and secure space to unite, share, and thrive."}
                     learningStack={['Learned Typescript to write more type-safe code', 'Used Postgres for database.', 'Json Web Tokens to create multiple roles such as user and admin.', 'Auhtorization of user email with OTP.', 'Setting up nodemailer to send emails, for OTP, Updates & Newsletter.']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
