@@ -7,7 +7,6 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Calendly from '../components/Calendly'
 import Projects from '../components/Projects'
-import Footer from '../components/Footer'
 import freshfood from '../assets/freshFood.jpg'
 
 const Home: React.FC = () => {
@@ -197,22 +196,36 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
                 />
 
+                <span className='h-[.25rem] w-[80%] rounded bg-slate-800'></span>
+
                 <Projects
                     loomVideo={undefined}
                     image={freshfood}
                     project_name={"Fresh Food - Order & List fresh food online."}
                     projectUrl={'https://github.com/shashankvish0010/freshfood'}
                     github={'https://github.com/shashankvish0010/freshfood'}
-                    project_description={"Fresh Food is a full-stack project developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack, along with React.js for the front end and Tailwind CSS for styling. It leverages modern technologies to create a seamless platform for customers, food partners, and the admin team."}
+                    project_description={"Fresh Food is my first ever full-stack project developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack, along with React.js for the front end and Tailwind CSS for styling. It leverages modern technologies to create a seamless platform for customers, food partners, and the admin team."}
                     learningStack={['Learned MERN stack to develop it.', 'Used Tailwind instead of core CSS.', 'Used Mongodb for database.', 'Json Web Tokens to create multiple roles such as customers, restauraunt partners and admin.', 'Payment integartion via Razorpay API']}
-                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "MongoDb", "TailwindCSS", "Javascript"]}
                 />
 
             </div>
-            <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
+            <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex flex-col justify-center items-center'>
+                <div className='h-max w-[85vw] p-3 flex flex-col gap-3'>
+                    <p className='logo md:text-3xl text-3xl'><p className='animate-typing overflow-hidden whitespace-nowrap text-white'>Hello Again!.</p></p>
+                    <p className='para_list text-base text-slate-100'>I'm always open to interesting work and genuine folks. feel free to drop me a text or book your time for work enquiries.</p>
+                </div>
                 <Calendly />
+                <div className='w-max h-max flex flex-row items-center mt-5 gap-6'>
+                    <a href='https://github.com/shashankvish0010'><Icon className='bg-white rounded-full p-2 shadow-xl cursor-pointer hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y+1 hover:scale-105' height='2rem' icon="mdi:github" /></a>
+                    <a href='https://www.linkedin.com/in/shashank-vishwakarma-650555283/'><Icon className='bg-white rounded-full p-2 shadow-xl cursor-pointer hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y+1 hover:scale-105' height='2rem' icon="devicon:linkedin" /></a>
+                    <a href='https://twitter.com/ShashankVis001'><Icon className='bg-white rounded-full p-2 shadow-xl cursor-pointer hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y+1 hover:scale-105' height='2rem' icon="line-md:twitter-x-alt" /></a>
+                </div>
+                <div className='text-white para_list flex md:flex-row flex-col w-screen h-max items-center justify-center gap-1 mt-3'>
+                    <p className='flex md:flex-row flex-col justify-center gap-1 text-center w-max font-medium'>&copy; Designed and Developed by <span className='text-yellow-300  font-semibold'
+                    > <a href="https://www.linkedin.com/in/shashank-vishwakarma-650555283/">Shashank Vishwakarma</a></span></p>
+                </div>
             </div>
-            <Footer />
         </div>
     )
 }

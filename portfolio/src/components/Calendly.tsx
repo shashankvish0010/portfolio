@@ -5,7 +5,7 @@ const Calendly: React.FC = () => {
 
     return (
         <>
-            <div className='md:block hidden h-max w-screen p-5'>
+            <div className='md:block hidden h-max w-screen'>
                 <InlineWidget styles={{ height: "700px" }} url='https://calendly.com/shashankvish010/casual-conversation' />
             </div>
             <div className='md:hidden block h-max w-screen p-5'>
