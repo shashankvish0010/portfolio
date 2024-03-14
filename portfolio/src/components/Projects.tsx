@@ -12,7 +12,7 @@ const Projects: React.FC<CardType> = (props: CardType) => {
     return (
         <div className='h-max w-[100%] flex flex-col items-center gap-5'>
             <div className='h-max md:w-[80%] w-[90%] justify-start'>
-                <p className='text-indigo-600 header_list md:text-3xl text-2xl'>{props.project_name}</p>
+                <p className='logo md:text-3xl text-2xl'>{props.project_name}</p>
             </div>
             <div className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 p-5 rounded-xl border-2 shadow-xl md:flex hidden justify-center items-center h-max w-max'>
                 <iframe width="840" height="473" src={props.loomVideo} className='border-2 rounded-xl shadow-lg' allowFullScreen></iframe>
@@ -45,7 +45,7 @@ const Projects: React.FC<CardType> = (props: CardType) => {
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 p-3 md:w-[30%] w-[100%]'>
-                    <p className='header_other text-xl w-max'>My Learnings & Improvements</p>
+                    <p className='logo text-xl w-max'>My Learnings & Improvements</p>
                     {
                         props.learningStack?.map((data: string) => (
                             <span className='flex items-center gap-2'>
