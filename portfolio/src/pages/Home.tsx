@@ -162,12 +162,12 @@ const Home: React.FC = () => {
                 <Projects
                     loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
+                    projectUrl={'https://wemeet-psi.vercel.app/'}
                     project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
             </div>
-
             <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
                 <Calendly />
             </div>

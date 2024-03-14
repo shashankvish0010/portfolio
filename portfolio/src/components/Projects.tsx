@@ -4,6 +4,7 @@ interface CardType {
     loomVideo: string;
     project_name: string;
     project_description: string;
+    projectUrl: string;
     learningStack: string[];
     techStack: string[];
 }
@@ -16,7 +17,7 @@ const Projects: React.FC<CardType> = (props: CardType) => {
             <div className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 p-5 rounded-xl border-2 shadow-xl md:flex hidden justify-center items-center h-max w-max'>
                 <iframe width="840" height="473" src={props.loomVideo} className='border-2 rounded-xl shadow-lg' allowFullScreen></iframe>
             </div>
-            <div className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 p-3 rounded-xl border-2 shadow-xl md:hidden flex justify-center items-center h-max w-max'>
+            <div className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 p-2 rounded-xl border-2 shadow-xl md:hidden flex justify-center items-center h-max w-max'>
                 <iframe width="360" height="203" src={props.loomVideo} className='border-2 rounded-xl shadow-lg' allowFullScreen></iframe>
             </div>
             <div className='flex md:flex-row flex-col md:items-center justify-center gap-5 p-3 w-[90%]'>
@@ -32,7 +33,7 @@ const Projects: React.FC<CardType> = (props: CardType) => {
                             )
                         }
                     </div>
-                    <span className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded'>
+                    <span onClick={() => window.location.href = props.projectUrl} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded'>
                         <p>Live Preview</p>
                         <Icon icon="tabler:arrow-up" color='white' height={'4vh'} />
                     </span>
