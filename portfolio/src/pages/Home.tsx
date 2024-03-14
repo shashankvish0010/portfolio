@@ -154,7 +154,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <div id='projects' className='ibg-slate-100 h-max w-screen flex flex-col p-3 gap-5 items-center'>
+            <div id='projects' className='ibg-slate-100 h-max w-screen flex flex-col p-3 gap-10 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
@@ -168,6 +168,8 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
 
+                <span className='h-[.25rem] w-[80%] rounded bg-indigo-600'></span>
+
                 <Projects
                     loomVideo={"https://www.loom.com/embed/0319f4bd190b469ab0eccdfa71584b04?sid=833c10bd-9ba5-4279-9da1-6b9c3a7089e6"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
@@ -176,6 +178,8 @@ const Home: React.FC = () => {
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
+
+                <span className='h-[.25rem] w-[80%] rounded bg-indigo-600'></span>
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/49fb57cd210d4c28a9a3dba7a0e51e6b?sid=37036a6f-6353-43aa-be3f-20684de69742"}
