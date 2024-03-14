@@ -33,10 +33,16 @@ const Projects: React.FC<CardType> = (props: CardType) => {
                             )
                         }
                     </div>
+                    <div className='h-max w-max flex gap-3'>
                     <span onClick={() => window.location.href = props.projectUrl} className='header_list h-max w-max flex flex-row items-center gap-2 bg-indigo-600 text-white p-2 rounded'>
                         <p>Live Preview</p>
-                        <Icon icon="tabler:arrow-up" color='white' height={'4vh'} />
+                        <Icon icon="tabler:arrow-up" color='white' height={'2rem'} />
                     </span>
+                    <span onClick={() => window.location.href = props.projectUrl} className='header_list h-max w-max flex flex-row items-center gap-2 bg-slate-800 text-white p-2 rounded'>
+                        <p>GitHub</p>
+                        <Icon icon="flowbite:github-solid" style={{ color: 'white' }} height={'2rem'} />
+                    </span>
+                    </div>
                 </div>
                 <div className='flex flex-col gap-2 p-3 md:w-[30%] w-[100%]'>
                     <p className='header_other text-xl w-max'>My Learnings & Improvements</p>

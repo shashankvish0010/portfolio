@@ -48,7 +48,7 @@ const Home: React.FC = () => {
                 <div className='md:flex hidden justify-center items-center h-max w-max'>
                     <motion.img initial={{ y: -100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 100, behaviour: "smooth"}}
+                        transition={{ type: "spring", stiffness: 100, behaviour: "smooth" }}
                         className='rounded-full border-4 border-indigo-600 shadow-xl' src={profile} width='350px' />
                 </div>
                 <div className='md:hidden flex justify-center items-center h-max w-max'>
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
                         className='md:hidden' onClick={() => { index > 0 ? setIndex(--index) : setIndex(2) }}>
                         <Icon className='md:hidden bg-indigo-600 shadow-2xl border-2 rounded-full p-1' icon="iconamoon:arrow-left-2-bold" width="1.5rem" style={{ color: "white" }} />
                     </div>
-                    <motion.div initial={{ opacity:0 }} animate={{opacity: 1}} transition={{ behaviour: "smooth", delay: 0.4}}
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ behaviour: "smooth", delay: 0.4 }}
                         className='h-max w-[75vw] md:hidden flex flex-col gap-1 rounded-3xl border-2 shadow-xl transition-transform duration-700 ease-in-out'>
                         <p className='header_list text-xl text-center p-2'>{skillsCategories[index]}</p>
                         {
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <div className='h-max w-screen flex flex-col p-3 gap-5 items-center'>
+            <div className='bg-slate-200 h-max w-screen flex flex-col p-3 gap-5 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
@@ -167,6 +167,25 @@ const Home: React.FC = () => {
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
+
+                <Projects
+                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    project_name={"WeMeet - Schedule & Host Online Meetings."}
+                    projectUrl={'https://wemeet-psi.vercel.app/'}
+                    project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
+                    learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
+                />
+
+                <Projects
+                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    project_name={"WeMeet - Schedule & Host Online Meetings."}
+                    projectUrl={'https://wemeet-psi.vercel.app/'}
+                    project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
+                    learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
+                />
+
             </div>
             <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
                 <Calendly />
