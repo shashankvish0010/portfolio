@@ -154,7 +154,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <div id='projects' className='ibg-slate-100 h-max w-screen flex flex-col p-3 gap-10 items-center'>
+            <div id='projects' className='bg-slate-100 h-max w-screen flex flex-col p-3 gap-10 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
