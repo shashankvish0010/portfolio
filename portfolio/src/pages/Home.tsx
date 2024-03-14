@@ -165,7 +165,7 @@ const Home: React.FC = () => {
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
                     projectUrl={'https://wemeet-psi.vercel.app/'}
                     github={'https://github.com/shashankvish0010/wemeet'}
-                    project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
+                    project_description={"WeMeet is a complete solution for online meetings need it is designed to revolutionize the way you schedule and conduct online meetings. Whether you're organizing team sync-ups, client presentations, or virtual conferences, WeMeet ensures a secure, reliable, and user-friendly platform for all your meeting need."}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript", "WebRTC", "Socket.io", "Redis"]}
                 />
