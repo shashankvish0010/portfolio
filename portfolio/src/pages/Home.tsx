@@ -168,7 +168,7 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
 
-                <span className='h-[.25rem] w-[80%] rounded bg-indigo-600'></span>
+                <span className='h-[.25rem] w-[80%] rounded bg-slate-800'></span>
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/0319f4bd190b469ab0eccdfa71584b04?sid=833c10bd-9ba5-4279-9da1-6b9c3a7089e6"}
@@ -179,7 +179,7 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
 
-                <span className='h-[.25rem] w-[80%] rounded bg-indigo-600'></span>
+                <span className='h-[.25rem] w-[80%] rounded bg-slate-800'></span>
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/49fb57cd210d4c28a9a3dba7a0e51e6b?sid=37036a6f-6353-43aa-be3f-20684de69742"}
