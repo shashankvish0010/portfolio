@@ -160,27 +160,27 @@ const Home: React.FC = () => {
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
                 </div>
                 <Projects
-                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    loomVideo={"https://www.loom.com/embed/12a6e38b27e24ce081d05d11d9a93774?sid=d1f1f35a-b771-4b43-ae35-acb878e19b6d"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
                     projectUrl={'https://wemeet-psi.vercel.app/'}
-                    project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
+                    project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
 
                 <Projects
-                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    loomVideo={"https://www.loom.com/embed/0319f4bd190b469ab0eccdfa71584b04?sid=833c10bd-9ba5-4279-9da1-6b9c3a7089e6"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
-                    projectUrl={'https://wemeet-psi.vercel.app/'}
-                    project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
+                    projectUrl={'https://zen-gamma.vercel.app/'}
+                    project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
 
                 <Projects
-                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    loomVideo={"https://www.loom.com/embed/49fb57cd210d4c28a9a3dba7a0e51e6b?sid=37036a6f-6353-43aa-be3f-20684de69742"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
-                    projectUrl={'https://wemeet-psi.vercel.app/'}
+                    projectUrl={'https://weblog-lake.vercel.app/'}
                     project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
