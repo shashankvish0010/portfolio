@@ -7,8 +7,8 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Calendly from '../components/Calendly'
 import Projects from '../components/Projects'
-// import project1 from '../assets/laptop_portfolio.avif'
-// import Projects from '../components/Projects'
+import Footer from '../components/Footer'
+import freshfood from '../assets/freshFood.jpg'
 
 const Home: React.FC = () => {
     const skillsCategories: string[] = ["Front-end", "Back-end", "Other"]
@@ -162,6 +162,7 @@ const Home: React.FC = () => {
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/12a6e38b27e24ce081d05d11d9a93774?sid=d1f1f35a-b771-4b43-ae35-acb878e19b6d"}
+                    image={undefined}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
                     projectUrl={'https://wemeet-psi.vercel.app/'}
                     github={'https://github.com/shashankvish0010/wemeet'}
@@ -174,6 +175,7 @@ const Home: React.FC = () => {
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/0319f4bd190b469ab0eccdfa71584b04?sid=833c10bd-9ba5-4279-9da1-6b9c3a7089e6"}
+                    image={undefined}
                     project_name={"ZEN - Video Calling & Upcoming Livestream."}
                     projectUrl={'https://zen-gamma.vercel.app/'}
                     github={'https://github.com/shashankvish0010/zen'}
@@ -186,6 +188,7 @@ const Home: React.FC = () => {
 
                 <Projects
                     loomVideo={"https://www.loom.com/embed/49fb57cd210d4c28a9a3dba7a0e51e6b?sid=37036a6f-6353-43aa-be3f-20684de69742"}
+                    image={undefined}
                     project_name={"WeBlog - Blogging platform for developers."}
                     projectUrl={'https://weblog-lake.vercel.app/'}
                     github={'https://github.com/shashankvish0010/weblog'}
@@ -194,10 +197,22 @@ const Home: React.FC = () => {
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
                 />
 
+                <Projects
+                    loomVideo={undefined}
+                    image={freshfood}
+                    project_name={"Fresh Food - Order & List fresh food online."}
+                    projectUrl={'https://github.com/shashankvish0010/freshfood'}
+                    github={'https://github.com/shashankvish0010/freshfood'}
+                    project_description={"Fresh Food is a full-stack project developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack, along with React.js for the front end and Tailwind CSS for styling. It leverages modern technologies to create a seamless platform for customers, food partners, and the admin team."}
+                    learningStack={['Learned MERN stack to develop it.', 'Used Tailwind instead of core CSS.', 'Used Mongodb for database.', 'Json Web Tokens to create multiple roles such as customers, restauraunt partners and admin.', 'Payment integartion via Razorpay API']}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
+                />
+
             </div>
             <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
                 <Calendly />
             </div>
+            <Footer />
         </div>
     )
 }
