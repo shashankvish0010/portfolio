@@ -51,6 +51,7 @@ const Header: React.FC = () => {
           <li onClick={() => scrollToSection('about')} className='cursor-pointer'>About Me</li>
           <li onClick={() => scrollToSection('skills')} className='cursor-pointer'>Skills</li>
           <li onClick={() => scrollToSection('projects')} className='cursor-pointer'>Projects</li>
+          <li onClick={() => scrollToSection('connect')} className='cursor-pointer'>Let's Connect</li>
         </ul>
       </motion.div>
       : null
