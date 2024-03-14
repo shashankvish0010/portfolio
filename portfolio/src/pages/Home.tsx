@@ -159,14 +159,14 @@ const Home: React.FC = () => {
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
                 </div>
-                
+
                 <Projects
                     loomVideo={"https://www.loom.com/embed/12a6e38b27e24ce081d05d11d9a93774?sid=d1f1f35a-b771-4b43-ae35-acb878e19b6d"}
                     project_name={"WeMeet - Schedule & Host Online Meetings."}
                     projectUrl={'https://wemeet-psi.vercel.app/'}
                     project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
-                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript", "WebRTC", "Socket.io", "Redis"]}
                 />
 
                 <span className='h-[.25rem] w-[80%] rounded bg-slate-800'></span>
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
                     projectUrl={'https://zen-gamma.vercel.app/'}
                     project_description={"Zen is a state-of-the-art communication platform built on the PERN stack and WebRTC technology with WebSocket for real-time communication. Offering seamless video calling and upcoming live streaming features, Zen ensures secure, reliable, and user-friendly experiences."}
                     learningStack={['Learned WebRTC architecture and WebSocket.', 'Implemented the Web-RTC with Socket.io for realtime video calling', 'Building a real-time user login monitoring to detect active users on platform.', 'Learned Redis to lower threshold of Database.']}
-                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript", "WebRTC", "Socket.io", "Redis"]}
                 />
 
                 <span className='h-[.25rem] w-[80%] rounded bg-slate-800'></span>
@@ -188,7 +188,7 @@ const Home: React.FC = () => {
                     projectUrl={'https://weblog-lake.vercel.app/'}
                     project_description={"WeBlog is a full-stack web platform crafted with the powerful PERN stack (PostgreSQL, Express.js, React.js, Node.js). Complemented by a sleek React.js frontend, styled with Tailwind CSS, WeBlog offers developers a seamless and secure space to unite, share, and thrive."}
                     learningStack={['Learned Typescript to write more type-safe code', 'Used Postgres for database.', 'Json Web Tokens to create multiple roles such as user and admin.', 'Auhtorization of user email with OTP.', 'Setting up nodemailer to send emails, for OTP, Updates & Newsletter.']}
-                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
+                    techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "Typescript"]}
                 />
 
             </div>
