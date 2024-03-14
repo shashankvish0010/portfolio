@@ -6,6 +6,7 @@ import skills from '../utils/skills.json'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Calendly from '../components/Calendly'
+import Projects from '../components/Projects'
 // import project1 from '../assets/laptop_portfolio.avif'
 // import Projects from '../components/Projects'
 
@@ -153,18 +154,19 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            {/* <div className='h-max w-screen flex flex-col p-3 gap-3 items-center'>
+            <div className='bg-slate-200 h-max w-screen flex flex-col p-3 gap-5 items-center'>
                 <div className='w-[85vw] flex flex-col p-3 gap-2'>
                     <p className='header_list text-xl'>Visit my portfolio</p>
                     <p className='heading_other text-3xl'>My Best <span className='bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text'>Projects</span></p>
                 </div>
                 <Projects
-                    image={project1}
-                    project_name={"WeMeet"}
+                    loomVideo={"https://www.loom.com/embed/dc247d740b14418ebb9b0828d6e1544a?sid=fade13b2-f001-4481-870f-60f35cbae9ad"}
+                    project_name={"WeMeet - Schedule & Host Online Meetings."}
                     project_description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum perspiciatis ullam eos. Sed incidunt adipisci ducimus atque quos amet suscipit nesciunt, mollitia eos earum ullam aliquam id consequatur aut!"}
+                    learningStack={['Learned more about real-time communication servers', 'Implemented the Web-RTC with Socket.io for realtime video & text chat during meeting', 'Building a email notification system within the backend with the help of cron jobs & Redis']}
                     techStack={["ReactJs", "NodeJs", "ExpressJs", "PostgreSQL", "TailwindCSS", "WebRTC", "Socket.io", "Redis"]}
                 />
-            </div> */}
+            </div>
 
             <div id="connect" className='bg-indigo-600 h-max p-5 w-screen flex justify-center items-center'>
                 <Calendly />
