@@ -14,8 +14,8 @@ interface Experience_Type {
 
 const Experience: React.FC<Experience_Type> = (props: Experience_Type) => {
   return (
-    <div className="rounded-3xl bg-indigo-600 text-white border-2 md:w-[85vw] w-[90vw] flex flex-col p-5 gap-2">
-      <div className="flex flex-row gap-3 items-center">
+    <div className="rounded-[50px] bg-indigo-600 text-white border-2 w-[90vw] flex flex-col p-5 gap-2">
+      <div className="flex flex-row gap-3 items-center p-3">
         <div className="flex justify-center items-center h-max w-max">
           <motion.img
             initial={{ y: -100, opacity: 0 }}

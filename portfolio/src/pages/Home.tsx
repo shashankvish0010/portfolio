@@ -130,6 +130,32 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
+      <div id="experience" className="flex flex-col gap-2">
+        <div className="w-[85vw] flex flex-col p-3 gap-2">
+          <p className="heading_other text-3xl">
+            My{" "}
+            <span className="bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text">
+              Experience
+            </span>
+          </p>
+        </div>
+        <Experience
+          logo={ballerine}
+          designation={"Software Engineer Intern"}
+          company={"Ballerine"}
+          location={"New York, United States · Remote"}
+          duration={"Mar 2024 - May 2024"}
+          company_description={
+            "Ballerine is an open-source platform that provides global payment companies and marketplaces with comprehensive onboarding, underwriting, and risk management services for their merchants, sellers, and transactions. By integrating multiple services and data sources into a single contract, Ballerine simplifies risk management, allowing for efficient and flexible customization based on specific use cases."
+          }
+          workStack={[
+            "During the internship, I worked on building a default homepage for the back office, which contains user-specific information and analytics.",
+            "Implemented user-specific content like a welcome message and user avatar with custom translation.",
+            "Integrated components like switch tabs (Statistics and Workflows), date range input and calendar, using the modern Shad-CN UI library.",
+            "Implemented date range filtering with Zod (schema validation with static type inference) using search parameters.",
+          ]}
+        />
+      </div>
       <div
         id="skills"
         className="h-max w-screen flex flex-col p-3 gap-3 items-center"
@@ -249,33 +275,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div id="experience" className="flex flex-col gap-2">
-        <div className="w-[85vw] flex flex-col p-3 gap-2">
-          <p className="heading_other text-3xl">
-            My{" "}
-            <span className="bg-gradient-to-r from-indigo-600 via-violet-500 to-pink-500 text-transparent bg-clip-text">
-              Experience
-            </span>
-          </p>
-        </div>
-        <Experience
-          logo={ballerine}
-          designation={"Software Engineer Intern"}
-          company={"Ballerine"}
-          location={"New York, United States · Remote"}
-          duration={"Mar 2024 - May 2024"}
-          company_description={
-            "Ballerine is an open-source platform that provides global payment companies and marketplaces with comprehensive onboarding, underwriting, and risk management services for their merchants, sellers, and transactions. By integrating multiple services and data sources into a single contract, Ballerine simplifies risk management, allowing for efficient and flexible customization based on specific use cases."
-          }
-          workStack={[
-            "During the internship, I worked on building a default homepage for the back office, which contains user-specific information and analytics.",
-            "Implemented user-specific content like a welcome message and user avatar with custom translation.",
-            "Integrated components like switch tabs (Statistics and Workflows), date range input and calendar, using the modern Shad-CN UI library.",
-            "Implemented date range filtering with Zod (schema validation with static type inference) using search parameters.",
-          ]}
-        />
-      </div>
-
       <div
         id="projects"
         className="bg-slate-100 h-max w-screen flex flex-col p-3 gap-10 items-center"
