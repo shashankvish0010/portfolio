@@ -16,7 +16,7 @@ const Experience: React.FC<Experience_Type> = (props: Experience_Type) => {
   return (
     <div className="rounded-3xl bg-indigo-600 text-white border-2 w-[85vw] flex flex-col p-5 gap-2">
       <div className="flex flex-row gap-3 items-center">
-        <div className="md:flex hidden justify-center items-center h-max w-max">
+        <div className="flex justify-center items-center h-max w-max">
           <motion.img
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
