@@ -14,7 +14,7 @@ interface Experience_Type {
 
 const Experience: React.FC<Experience_Type> = (props: Experience_Type) => {
   return (
-    <div className="rounded-3xl bg-indigo-600 text-white border-2 w-[85vw] flex flex-col p-5 gap-2">
+    <div className="rounded-3xl bg-indigo-600 text-white border-2 md:w-[85vw] w-[90vw] flex flex-col p-5 gap-2">
       <div className="flex flex-row gap-3 items-center">
         <div className="flex justify-center items-center h-max w-max">
           <motion.img
@@ -44,12 +44,8 @@ const Experience: React.FC<Experience_Type> = (props: Experience_Type) => {
         <div className="flex flex-col gap-2 w-[100%]">
           <p className="logo text-xl w-max text-yellow-200">Work Experience</p>
           {props.workStack?.map((data: string) => (
-            <span className="flex items-start gap-2 p-1">
-              <Icon
-                className="md:block hidden"
-                icon="meteocons:star-fill"
-                height="1.5rem"
-              />
+            <span className="flex items-start gap-2 md:p-1 p-0.5">
+              <Icon icon="meteocons:star-fill" height="1.5rem" />
               <p className="para_list">{data}</p>
             </span>
           ))}
